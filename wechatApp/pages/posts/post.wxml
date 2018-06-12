@@ -1,25 +1,20 @@
+<import src="post-item/post-item-template.wxml" />
 <view>
   <swiper indicator-dots="true" autoplay="true" interval="2000">
-    <swiper-item><image src='/images/gaokao.png'></image></swiper-item>
-    <swiper-item><image src='/images/james.jpg'></image></swiper-item>
-    <swiper-item><image src='/images/qingdao.jpg'></image></swiper-item>
+    <swiper-item>
+      <image src='/images/gaokao.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/james.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/qingdao.jpg'></image>
+    </swiper-item>
   </swiper>
 
   <block wx:for="{{post_key}}" wx:for-item="item">
-    <view class='post-container'>
-      <view class='post-author-date'>
-        <image class='post-author' src='{{item.author_img}}'></image>
-        <text class='post-date'>{{item.date}}</text>
-      </view>
-      <text class='post-title'>{{item.title}}</text>
-      <image class='post-image' src='{{item.post_img}}'></image>
-      <text class='post-content'>{{item.content}}</text>
-      <view class='post-like'>
-        <image class='post-like-image' src='/images/view.gif'></image>
-        <text class='post-like-font'>{{item.view_num}}</text>
-        <image class='post-like-image' src='/images/chat.gif'></image>
-        <text class='post-like-font'>{{item.collect_num}}</text>
-      </view>
+    <view catchtap='onPostTap' data-postid='{{item.postId}}'>
+      <template is="postItem" data="{{...item}}" />
     </view>
   </block>
 </view>

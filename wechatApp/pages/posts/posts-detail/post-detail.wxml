@@ -1,0 +1,18 @@
+<view>
+  <view>
+    <image src='../../../images/四巨头.jpg'></image>
+  </view>
+  <view>
+    <image src='../../../images/1.jpg'></image>
+    <text>周绝伦</text>
+    <text>2018.06.08</text>
+  </view>
+  <view>
+    <image src='../../../images/collection.png'></image>
+    <image src='../../../images/share.png'></image>
+    <view></view>
+  </view>
+  <view>
+    <text></text>
+  </view>
+</view>
