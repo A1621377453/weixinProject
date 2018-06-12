@@ -5,7 +5,7 @@
     "pages/posts/posts-detail/post-detail"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarBackgroundColor": "#405f80",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "最新资讯",
     "backgroundColor": "#eeeeee",
