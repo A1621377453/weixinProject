@@ -71,6 +71,29 @@ Page({
     })
   },
 
+  //展示可操作取消/确定面板
+  showModal: function (postsCollected, postCollected) {
+    var that = this;
+    wx.showModal({
+      title: "收藏",
+      content: postCollected ? "收藏该文章？" : "取消收藏该文章？",
+      showCancel: "true",
+      cancelText: "取消",
+      cancelColor: "#333",
+      confirmText: "确认",
+      confirmColor: "#405f80",
+      success: function (res) {
+        if (res.confirm) {
+          wx.setStorageSync('posts_collected', postsCollected);
+          // 更新数据绑定变量，从而实现切换图片
+          that.setData({
+            collected: postCollected
+          })
+        }
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
