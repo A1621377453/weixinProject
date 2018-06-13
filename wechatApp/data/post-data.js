@@ -7,7 +7,11 @@ var local_database = [
     reading: "97",
     collection: "45",
     avatar: "/images/3.jpg",
-    postId:0
+    postId:0,
+    headImgSrc:"/images/四巨头.jpg",
+    author: "林白衣",
+    detail: "2018年，总决赛依然是骑士和勇士的夙愿之争，但是詹姆斯再次落败，勇士卫冕成功！试问，勇士王朝能坚持多久？",
+    dateTime: "24小时前",
   },
   {
     date: "2018.06.09",

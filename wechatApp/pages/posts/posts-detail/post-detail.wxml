@@ -1,13 +1,13 @@
 <view class='container'>
-  <image class='head-image' src='../../../images/四巨头.jpg'></image>
+  <image class='head-image' src='{{postData.headImgSrc}}'></image>
   <image class='audio' src='../../../images/music-start.png'></image>
   <view class="author-date">
-    <image class="avatar" src='../../../images/1.jpg'></image>
-    <text class="author">周绝伦</text>
+    <image class="avatar" src='{{postData.avatar}}'></image>
+    <text class="author">{{postData.author}}</text>
     <text class="const-text">发表于</text> 
-    <text class="date">2018.06.08</text>
+    <text class="date">{{postData.dateTime}}</text>
   </view>
-  <text class="title">2018年NBA总决赛，勇士卫冕成功</text>
+  <text class="title">{{postData.title}}</text>
   <view class="tool">
     <view class="circle-img">
       <image src='../../../images/collection.png'></image>
@@ -15,5 +15,5 @@
     </view>
     <view class="horizon"></view>
   </view>
-  <text class="detail">2018年，总决赛依然是骑士和勇士的夙愿之争，但是詹姆斯再次落败，勇士卫冕成功！试问，勇士王朝能坚持多久？</text>
+  <text class="detail">{{postData.detail}}</text>
 </view>

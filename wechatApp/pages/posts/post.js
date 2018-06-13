@@ -10,7 +10,7 @@ Page({
   onPostTap:function(event){
     var postid = event.currentTarget.dataset.postid;
     wx.navigateTo({
-      url: 'posts-detail/post-detail',
+      url: 'posts-detail/post-detail?id=' + postid,
     })
   },
 
